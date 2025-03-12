@@ -1,7 +1,6 @@
 # IntelliJ files
 *.iml
 .idea/
-.terraform/
 
 
 # Gradle files
@@ -20,3 +19,8 @@ logs/*
 !logback.xml
 
 temp/*
+
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup

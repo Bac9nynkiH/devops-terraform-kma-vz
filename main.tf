@@ -1,5 +1,8 @@
+
 provider "aws" {
-  region = var.aws_region
+  region     = var.aws_region
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 data "aws_ami" "ubuntu" {
@@ -17,7 +20,6 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_security_group" "server_sg" {
   name        = var.sg_name
-  description = "Security group для серверів"
 
   ingress {
     from_port   = 22
