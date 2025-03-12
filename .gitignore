@@ -1,6 +1,7 @@
 # IntelliJ files
 *.iml
 .idea/
+.terraform/
 
 
 # Gradle files

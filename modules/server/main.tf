@@ -8,8 +8,8 @@ resource "aws_instance" "this" {
   user_data = <<EOF
 #cloud-config
 ssh_authorized_keys:
-  - ${my_public_key}
-  - ${your_public_key}
+  - ${var.my_public_key}
+  - ${var.your_public_key}
 EOF
 
   tags = {
